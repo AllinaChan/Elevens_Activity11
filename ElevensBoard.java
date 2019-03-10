@@ -89,7 +89,8 @@ public class ElevensBoard extends Board {
 			for (int sk2 = sk1 + 1; sk2 < selectedCards.size(); sk2++) {
 				int k2 = selectedCards.get(sk2).intValue();
 				if (cardAt(k1).pointValue() + cardAt(k2).pointValue() == 11) {
-					return true;
+					indexes.add(k1);
+					indexes.add(k2);
 				}
 			}
 		}
